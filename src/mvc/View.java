@@ -47,7 +47,7 @@ public class View extends JPanel {
 		label.setFont(new Font("SansSerif", Font.PLAIN, 22));
 
 		status.setHorizontalAlignment(SwingConstants.CENTER);
-		panel_1.add(status, BorderLayout.SOUTH);
+		//panel_1.add(status, BorderLayout.SOUTH);
 
 		JPanel panel_2 = new JPanel();
 		panel_0.add(panel_2);
@@ -62,8 +62,8 @@ public class View extends JPanel {
 		//JTree tree = new JTree();
 		//panel_3.add(tree);
 
-		FlowLayout fl_panel = (FlowLayout) panel.getLayout();
-		fl_panel.setAlignment(FlowLayout.RIGHT);
+		//FlowLayout fl_panel = (FlowLayout) panel.getLayout();
+		//fl_panel.setAlignment(FlowLayout.RIGHT);
 		panel_2.add(panel, BorderLayout.CENTER);
 		new Thread(model).start();
 	}
