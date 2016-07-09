@@ -58,9 +58,9 @@ public class View extends JPanel {
 		fl_panel_3.setAlignment(FlowLayout.LEFT);
 		panel_2.add(panel_3, BorderLayout.WEST);
 
-		JTree tree = new myJTree(new MedRoot());
+		//JTree tree = new myJTree(new MedRoot());
 		//JTree tree = new JTree();
-		panel_3.add(tree);
+		//panel_3.add(tree);
 
 		FlowLayout fl_panel = (FlowLayout) panel.getLayout();
 		fl_panel.setAlignment(FlowLayout.RIGHT);
