@@ -18,7 +18,7 @@ public class Model implements Runnable {
 			myJButton calc = new myJButton();
 			new Thread(calc).start();
 			view.panel.add(calc);
-		} catch (Exception e) {return "Error: addThread() ";}
+		} catch (Exception e) {return "Error: addThread()  ";}
 		return "Success: addThread() ";
 	}
 
