@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mflops_java" default="all">
+  
+  
+  <property file="build.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.zip"/>
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.ear"/>
+    <include name="*.jar"/>
+    <include name="*.klib"/>
+    <include name="*.ane"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module GFLOPS -->
+  
+  <dirname property="module.gflops.basedir" file="${ant.file}"/>
+  
+  
+  
+  <property name="compiler.args.gflops" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="gflops.output.dir" value="${module.gflops.basedir}/out/production/GFLOPS"/>
+  <property name="gflops.testoutput.dir" value="${module.gflops.basedir}/out/test/GFLOPS"/>
+  
+  <path id="gflops.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="gflops.module.production.classpath"/>
+  
+  <path id="gflops.runtime.production.module.classpath">
+    <pathelement location="${gflops.output.dir}"/>
+  </path>
+  
+  <path id="gflops.module.classpath">
+    <pathelement location="${gflops.output.dir}"/>
+  </path>
+  
+  <path id="gflops.runtime.module.classpath">
+    <pathelement location="${gflops.testoutput.dir}"/>
+    <pathelement location="${gflops.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.gflops">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.gflops">
+    <patternset refid="excluded.from.module.gflops"/>
+  </patternset>
+  
+  <path id="gflops.module.sourcepath">
+    <dirset dir="${module.gflops.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.gflops" depends="compile.module.gflops.production,compile.module.gflops.tests" description="Compile module GFLOPS"/>
+  
+  <target name="compile.module.gflops.production" description="Compile module GFLOPS; production classes">
+    <mkdir dir="${gflops.output.dir}"/>
+    <javac destdir="${gflops.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.gflops}"/>
+      <bootclasspath refid="gflops.module.bootclasspath"/>
+      <classpath refid="gflops.module.production.classpath"/>
+      <src refid="gflops.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.gflops"/>
+    </javac>
+    
+    <copy todir="${gflops.output.dir}">
+      <fileset dir="${module.gflops.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.gflops.tests" depends="compile.module.gflops.production" description="compile module GFLOPS; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.gflops" description="cleanup module">
+    <delete dir="${gflops.output.dir}"/>
+    <delete dir="${gflops.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.gflops" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.gflops" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>
