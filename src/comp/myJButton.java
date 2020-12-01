@@ -28,10 +28,10 @@ public class myJButton extends JButton implements Runnable {
 			}
 			long t2 = System.currentTimeMillis();
 			float time=  (t2-t1)/1000F;
-			value = (float) (1e-6 * X/time);
+			value = (float) 1e-6 * X/time;
 			String s = String.format("%.0f", value) + "  " + String.format("%.2f", time) + " сек";
 			setText(s);
-			try {Thread.sleep(2000);} 
+			try {Thread.sleep(3000);}
 			catch (InterruptedException e) {}
 		}
 		value = 0;
