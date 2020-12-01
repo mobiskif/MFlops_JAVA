@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mflops_JAVA.iml" filepath="$PROJECT_DIR$/.idea/mflops_JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GFLOPS.iml" filepath="$PROJECT_DIR$/GFLOPS.iml" />
     </modules>
   </component>
 </project>
