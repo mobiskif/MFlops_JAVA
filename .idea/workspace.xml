@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b43b890-c1ab-4c13-bb4e-b084fad4d6a6" name="Default Changelist" comment="2020.12.01" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l4HA8Qdcj6LKzshj1IUir96opY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="build" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mvc.Main" />
+      <module name="GFLOPS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="2020.12.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.12.01" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="494" y="124" key="FileChooserDialogImpl" timestamp="1606849410971">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="494" y="124" key="FileChooserDialogImpl/62.0.1304.768@62.0.1304.768" timestamp="1606849410971" />
+    <state width="1282" height="187" key="GridCell.Tab.0.bottom" timestamp="1606850648401">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1282" height="187" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1606850648401" />
+    <state width="1282" height="187" key="GridCell.Tab.0.center" timestamp="1606850648401">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1282" height="187" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1606850648401" />
+    <state width="1282" height="187" key="GridCell.Tab.0.left" timestamp="1606850648401">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1282" height="187" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1606850648401" />
+    <state width="1282" height="187" key="GridCell.Tab.0.right" timestamp="1606850648401">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state width="1282" height="187" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1606850648401" />
+    <state x="306" y="115" key="Vcs.Push.Dialog.v2" timestamp="1606850580908">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="306" y="115" key="Vcs.Push.Dialog.v2/62.0.1304.768@62.0.1304.768" timestamp="1606850580908" />
+  </component>
+</project>
